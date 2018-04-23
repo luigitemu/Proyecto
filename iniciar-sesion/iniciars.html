@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/signin.css">
+  <link rel="icon" href="http://ssl.gstatic.com/images/branding/product/1x/google_plus_192dp.png" sizes="192x192">
+  <title>Iniciar Sesión</title>
+ <style type="text/css">
+ body {
+
+    background-image: url('img/background1.jpg');
+    background-attachment: fixed ;
+     background-size: 1292px 725px !important;
+    background-repeat: no-repeat !important;
+     background-position: right top;
+}
+ </style>
+</head>
+<body>
+
+	 <div class="container">
+	 	<div class="row">
+	 		  <div class="wrapper" >
+				    <form class="form-signin" id="form-inicio">  
+				    <img src="img/google3.png" ">     
+				      <h2 class="form-signin-heading">Iniciar Sesión </h2>
+
+				      <input style="margin-top: 20px;" type="text" class="form-control" name="username" id="correo-usuario" placeholder="correo@gmail.com" onkeydown="validarEmail(this);" />
+				      <h5 class="invalid-feedback" id="validar-correo" style="display: none;" style="color: white !important;">Correo no valido</br></h5>
+
+				      <input style="margin-top: 20px;" type="password" class="form-control" name="contrasena" id="clave-usuario" placeholder="contrasena" required=""/>      
+				      <h5 class="invalid-feedback" id="txt-contrasena" style="display: none;" style="color: white !important;">Campo obligatorio</br></h5>
+
+				      <label class="checkbox">
+				        <input type="checkbox" value="remember-me" id="recuerdame" name="recuerdame"> Recuerdame
+				      </label>
+				    <a class="btn btn-lg btn-primary btn-block" id="btn-inicio" type="submit" href="../sesion-iniciada/sesion-iniciada.html">Iniciar Sesión</a> 
+				    </form>
+			  </div>
+	 	</div>
+	 </div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/controlador.js"></script>
+	<script type="text/javascript">
+		$("#btn-inicio").click(function(){
+
+			var parametros= 'correo='+$("#correo-usuario").val() +"&"+
+							'clave='+ $("#clave-usuario").val();
+
+			alert("Se enviara esto a procesar.php: " + parametros);
+ 
+			$.ajax({
+				url:'ajax/procesar-inicio-sesion.php',
+				method:'POST', 
+				data:parametros,
+				success:function(data){
+						alert("Registro Exitoso!" + data);
+				}
+			});
+			alert("Inicio de sesion Exitoso!" + data);	
+		});	
+	</script> 
+</body>
+</html>
