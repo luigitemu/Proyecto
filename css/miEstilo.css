@@ -1,0 +1,103 @@
+body{
+	background-color: white !important;
+}
+.headline{
+	font-family: "Satisfy";
+	color:white;
+	font-size: 100px;
+	margin-bottom: 80px !important;
+}
+
+.featurette-heading{
+	color:#704882;
+	font-size: 2.5rem; 
+}
+
+.text-muted{
+	color: #837588 !important;
+	font-size: 2.5rem;
+}
+
+.lead {
+	color: #565D63;
+	font-size: 25px;
+}
+
+.info-title{
+	color:#565D63;
+	font-weight: 400; 
+	font-size: 38px;
+}
+
+.featurette-heading2{
+	color:#BBBCBF;
+}
+
+.headparragraph{
+	font-size: 40px;
+	font-family: "lato";
+}
+
+	.navbar.transparent.navbar-inverse .navbar-inner {
+   background: rgba(0,0,0,0.4);
+}
+
+.carousel-inner{
+	width:100%;
+  	max-height: 2000px !important;
+}
+
+.navbar-title{
+	color:white;
+	font-size: 1.3rem;
+	font-family: "Bitter";
+}
+
+.new-color-nv{
+	background-color: transparent;
+}
+
+.carousel-height{
+	margin-top: -48px; 
+	height: 752px
+}
+
+.height-cosntDiv{
+	height: 752px;
+}
+
+.div-foot{
+	padding-bottom: 40px;
+}
+
+.featurette-divider{
+	margin-top: 100px !important;
+	margin-bottom: 100px !important;
+}
+
+.align-profile{
+	text-align: center;
+}
+
+.btn-prin{
+	border-radius: 100px;
+	background: linear-gradient(to right,#9d1985,#b11573) !important;
+	border-color: transparent;
+	font-size: 20px;
+	font-family: "Pacifico";
+		outline: transparent;
+}
+
+.btn-prin:focus {
+	outline: red;
+}
+
+.btn-detalles{
+	background: rgb(165, 48, 121) !important;
+	border-color: transparent;
+	font-family: "Satisfy";
+}
+
+.name-profile{
+	color:#645f66;
+}
