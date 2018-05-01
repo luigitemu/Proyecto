@@ -1,0 +1,48 @@
+.flex-column{
+	margin-bottom: -145px !important;
+}
+
+.p-2{
+	background-color: white;
+	padding-bottom: 10px
+}
+
+.navbar-items{
+	margin-top: 14px; 
+	padding-bottom: 10px;
+}
+
+.navbar-title{
+	margin-top: -2px;
+	color:#727272;
+	font-family:'Lato';
+}
+
+.navbar-div{
+	border-left:1px solid #f2f2f2;
+	height:30px;
+	margin-top:5px
+}
+
+.navbar-icons{
+	padding:0px !important; margin-left: 10px; margin-right:10px;
+}
+
+.icons-inicio{
+	color: #787878;
+	font-size: 20px; 
+	margin-top: 7px;
+}
+
+.icons-row{
+	background-color: white; 
+	margin-left: -250px !important;
+}
+
+.clr-lb{
+	color: #9C9C9C;
+}
+
+.navico{
+	color:#AFAFAF;
+}
