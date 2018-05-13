@@ -1,101 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/signin.css">
-  <link rel="icon" href="http://ssl.gstatic.com/images/branding/product/1x/google_plus_192dp.png" sizes="192x192">
-  <title>Registrarse :)</title>
- 	<style type="text/css">
- 		.form-control{
- 			font-size: 15px;
- 			margin: 4px;
- 		}
- 		.invalid-feedback{
- 			color: red;
- 		}
- 		input[type="password"]{
- 			margin-bottom: 2px;
- 		}
- 		body {
-    background-image: url("img/login3.jpg") !important;
-    background-attachment: fixed ;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
- 	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/signin.css">
+    <link rel="icon" href="http://ssl.gstatic.com/images/branding/product/1x/google_plus_192dp.png" sizes="192x192">
+    <title>Registrarse :)</title>
+    <style type="text/css">
+        .form-control {
+            font-size: 15px;
+            margin: 4px;
+        }
+        
+        .invalid-feedback {
+            color: red;
+        }
+        
+        input[type="password"] {
+            margin-bottom: 2px;
+        }
+        
+        body {
+            background-image: url("img/login3.jpg") !important;
+            background-attachment: fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
 </head>
+
 <body>
-	 <div class="container">
-	 	<div class="row">
-	 		  <div class="wrapper">
-				    <form class="form-signin" id="formulario-r">  
-					    <img src="img/google3.png" ">     
-					      <h2 class="form-signin-heading">Registrarse</h2>
-					      <div>
-					      	<label>Nombre</label>
-					      	<input type="text" name="txt-nombre" id="txt-nombre" class="form-control is-valid" placeholder="Nombre">
-					     	<div class="invalid-feedback" id="validacion-nombre" style="display: none;">Campo obligatorio</br></div>
-					  	  </div>
-					      <label>Apellido</label>
-					      	<input type="text" class="form-control" id="txt-apellido" name="txt-apellido" placeholder="Apellido"></input>
-					      	<div class="invalid-feedback" id="validacion-apellido" style="display: none;">Campo obligatorio</br></div>
-					      <label>Ingresa tu correo Electronico</label>
-								<input type="text" class="form-control" id="txt-correo" name="txt-correo" placeholder="example@gmail.com" onkeydown="validarEmail(this);"></input>
-					       <div class="invalid-feedback" id="validar-correo" style="display:none;">Correo no valido</br></div>
-					      <label>Crea una Contraseña</label>
-					      	<input type="password" class="form-control" id="txt-contrasena" name="txt-contrasena"  ></input>
-					      	<div class="invalid-feedback" id="validacion-contrasena" style="display: none;">Campo obligatorio</br></div>
-					      <label>Telefono Celular</label>
-					      	<input class="form-control" id="txt-celular" name="txt-celular" placeholder="99999999" </input>
-					      	<div class="invalid-feedback" id="validacion-celular" style="display: none;">Campo obligatorio</br></div>
-					      <label>Fecha de Nacimiento</label>
-					      	<input type="date" class="form-control" id="txt-fecha-nacimiento" name="txt-fecha-nacimiento"></input>
-					      	<div class="invalid-feedback" id="validacion-fecha-nacimiento" style="display: none;">Campo obligatorio</br></div>
-					      <label>Genero</label>
-					      	<select class="form-control" id="slc-genero">
-				     	 			<option value="Hombre">Hombre</option>
-				     	 			<option value="Mujer">Mujer</option>
-				     	 			<option value="Otros">Otros</option>
-				     	 			<option value="Narniano">Narniano</option>
-					     	 </select>
+    <div class="container">
+        <div class="row">
+            <div class="wrapper">
+                <form class="form-signin" id="formulario-r">
+                    <img src="img/google3.png">
+                    <h2 class="form-signin-heading">Registrarse</h2>
+                    <div>
+                        <label>Nombre</label>
+                        <input type="text" name="txt-nombre" id="txt-nombre" class="form-control is-valid" placeholder="Nombre">
+                        <div class="invalid-feedback" id="validacion-nombre" style="display: none;">Campo obligatorio</br>
+                        </div>
+                    </div>
+                    <label>Apellido</label>
+                    <input type="text" class="form-control" id="txt-apellido" name="txt-apellido" placeholder="Apellido"></input>
+                    <div class="invalid-feedback" id="validacion-apellido" style="display: none;">Campo obligatorio</br>
+                    </div>
+                    <label>Ingresa tu correo Electronico</label>
+                    <input type="text" class="form-control" id="txt-correo" name="txt-correo" placeholder="example@gmail.com" onkeydown="validarEmail(this);"></input>
+                    <div class="invalid-feedback" id="validar-correo" style="display:none;">Correo no valido</br>
+                    </div>
+                    <div class="invalid-feedback" id="validacion-correo" style="display:none;">Campo Obligatorio</br>
+                    </div>
+                    <label>Crea una Contraseña</label>
+                    <input type="password" class="form-control" id="txt-contrasena" name="txt-contrasena"></input>
+                    <div class="invalid-feedback" id="validacion-contrasena" style="display: none;">Campo obligatorio</br>
+                    </div>
+                    <label>Telefono Celular</label>
+                    <input class="form-control" id="txt-celular" name="txt-celular" placeholder="99999999"> </input>
+                    <div class="invalid-feedback" id="validacion-celular" style="display: none;">Campo obligatorio</br>
+                    </div>
+                    <label>Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" id="txt-fecha-nacimiento" name="txt-fecha-nacimiento"></input>
+                    <div class="invalid-feedback" id="validacion-fecha-nacimiento" style="display: none;">Campo obligatorio</br>
+                    </div>
+                    <label>Genero</label>
+                    <select class="form-control" id="slc-genero">
+				     	 			<option value="2">Hombre</option>
+				     	 			<option value="1">Mujer</option>
+				     	 			<option value="3">Otros</option>
+				     	 			<option value="4">Narniano</option>
+                              </select>
+                    <label>Imagen</label>
+                    <select class="form-control" id="slc-url-img">
+                                       <option value="../Img/luis.png">luis</option>
+                                       <option value="../Img/ana.png">ana</option>
+                                       <option value="../Img/prof1.png" >Perfil 1</option>
+                                       <option value="../Img/prof2.png" >Perfil 2</option>
+                                       <option value="../Img/prof3.png" >Perfil 3</option>
+                                       <option value="../Img/prof4.png" >Perfil 4</option>
+                                       <option value="../Img/prof5.png" >Perfil 5</option>
+                                       <option value="../Img/prof7.png" >Perfil 6</option>
+                                       <option value="../Img/prof8.png" >Perfil 7</option>
+                                       
+                               </select>
 
-	 				      <a class="btn btn-lg btn-primary btn-block btnsp" id="btn-registrarse" type="button" href="../sesion-iniciada/sesion-iniciada.html" style="margin-top: 10PX; margin-left: 4PX;">Registrarse</a> 
-	 				      <!--href="../pagina-principal" -->
-				    </form>
-			  </div>
-	 	</div>
-	 </div>
- 	 <script src="js/jquery-3.3.1.min.js"></script>
-	 <script src="js/controlador.js"></script>
-<!--VALIDACION DE CAMPOS VIA AJAX-->
-	<script type="text/javascript">
-		$("#btn-registrarse").click(function(){
-			var fechaN = document.getElementById("txt-fecha-nacimiento").value;
+                    <a class="btn btn-lg btn-primary btn-block btnsp" id="btn-registrarse" type="button" style="margin-top: 10PX; margin-left: 4PX;">Registrarse</a>
+                    <!--href="../pagina-principal" -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/controlador.js"></script>
+    <!--VALIDACION DE CAMPOS VIA AJAX-->
 
-			var parametros='nombre='+$("#txt-nombre").val()+
-						 	"&" + 'apellido=' + $("#txt-apellido").val()+
-							"&" + 'correo=' + $("#txt-correo").val()+
-							"&" + 'clave='+ $("#txt-contrasena").val()+
-							"&" + 'celular=' + $("#txt-celular").val()+
-							"&" + 'fecha=' + fechaN+
-							"&" + 'genero= ' + $("#slc-genero").val();
-
-			alert("Se enviara esto a procesar.php: " + parametros);
- 
-			$.ajax({
-				url:'ajax/procesar-registro.php',
-				method:'POST', 
-				data:parametros,
-				success:function(respuesta){
-						alert("Registro Exitoso!" + respuesta);
-				}
-			});
-			alert("Registro Exitoso!" + respuesta);	
-		});
-	</script>
 </body>
+
 </html>
