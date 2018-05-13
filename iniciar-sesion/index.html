@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/signin.css">
+    <link rel="icon" href="http://ssl.gstatic.com/images/branding/product/1x/google_plus_192dp.png" sizes="192x192">
+    <title>Iniciar Sesión</title>
+    <style type="text/css">
+        body {
+            background-image: url('img/background1.jpg');
+            background-attachment: fixed;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            background-position: right top;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="wrapper">
+                <form class="form-signin" id="form-inicio">
+                    <img src="img/google3.png">
+                    <h2 class="form-signin-heading ">Iniciar Sesión </h2>
+                    <input type="text" class="form-control" id="txt-correo" name="txt-correo" placeholder="example@gmail.com" onkeydown="validarEmail(this);"></input>
+                    <label class="invalid-feedback" id="validar-correo" style="display:none;"><h6 style="color: red;">Correo no valido</h6></label>
+                    <label class="invalid-feedback" id="validacion-correo" style="display: none; "><h6 style="color: red;">Campo obligatorio</h6></label>
+                    <input type="password" class="form-control" id="txt-contrasena" name="txt-contrasena"></input>
+                    <label class="invalid-feedback" id="validacion-contrasena" style="display: none; "><h6 style="color: red;">Campo obligatorio</h6></label>
+                    <label class="invalid-feedback" id="encontro-usuario" style="display: none; "><h6 style="color: red;">Usuario no encontrado o Contraseña incorrecta</h6></label>
+                    <a class="btn btn-lg btn-primary btn-block " id="btn-inicio" type="submit ">Iniciar Sesión</a>
+                    <!-- href="../sesion-iniciada/sesion-iniciada.html "-->
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js "></script>
+    <script src="js/controlador.js "></script>
+    <script type="text/javascript ">
+    </script>
+</body>
+
+</html>
